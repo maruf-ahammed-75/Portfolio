@@ -534,87 +534,56 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- About ----- */
 /* --------------------------------------- */
-/* 
-.about__content {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
-@media(max-width: 900px) {
-    .about__content {
-        flex-direction: column-reverse;
-        align-items: initial;
-    }
-}
-
-.about__photo-container {
-    margin-bottom: var(--gutter-normal);
-}
-
-@media(min-width: 901px) {
-    .about__text {
-        flex: 0 0 35%;
-    }
-    
-    .about__photo-container {
-        flex: 1;
-        margin: 0 var(--gutter-huge) 0 0;
-    }
-} */
- 
-
-/* ----- About ----- */
-/* 50% text / 50% photo with tightened vertical spacing */
 .about {
-  padding-top: 6rem; /* adjust section top space if needed */
-  padding-bottom: 6rem;
+  padding-top: 1.6rem;   /* reduced vertical spacing */
+  padding-bottom: 1.6rem;
 }
 
 .about h2 {
-  margin-bottom: 0.6rem;   /* reduce space under heading */
-  line-height: 1.15;
-  font-size: var(--font-size-large);
+  margin-bottom: 0.4rem;
+  /* line-height: 1.15;
+  font-size: var(--font-size-large); */
 }
 
 .about h2::after {
-  margin: 0.4rem 0 0.6rem; /* smaller decorative bar spacing */
-  width: 8rem;
+  margin: 0.3rem 0 0.4rem;
+  width: 6rem;
 }
 
 /* layout */
 .about__content {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 0.8rem;
   flex-wrap: nowrap;
+
 }
 
 .about__text {
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding-right: 1.2rem;
+  flex: 0 0 55%;
+  max-width: 55%;
+  padding-right: 1rem;
   box-sizing: border-box;
 }
 
 .about__text p {
-  margin-top: 0.2rem;   /* bring paragraph closer to heading */
-  margin-bottom: 1.2rem;
-  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  line-height: 1.55;
   font-size: 1.9rem;
 }
 
 /* photo column */
 .about__photo-container {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 45%;
+  max-width: 45%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
   background-position: center;
-  min-height: 320px;
+  min-height: 100px; /* reduced from 320px */
 }
 
 .about__photo-container img,
@@ -628,13 +597,11 @@ body:not(.user-is-tabbing) a:focus {
 
 /* responsive */
 @media (max-width: 900px) {
-  .about h2 { margin-bottom: 0.8rem; }
   .about__content { gap: 1rem; flex-direction: column; }
   .about__text,
   .about__photo-container { flex: 0 0 100%; max-width: 100%; }
-  .about__photo-container { min-height: 240px; }
+  .about__photo-container { min-height: 180px; }
 }
-/* ...existing code... */
 
 
 
@@ -642,9 +609,7 @@ body:not(.user-is-tabbing) a:focus {
 
 
 /* education */
-/* ----- Education ----- */
-/* ----- Education ----- */
-/* List wrapper */
+
 .education__list {
   display: flex;
   flex-direction: column;
@@ -743,7 +708,6 @@ body:not(.user-is-tabbing) a:focus {
     font-size: 1.5rem;
   }
 }
-/* ...existing code... */
 
 
 
@@ -808,11 +772,6 @@ body:not(.user-is-tabbing) a:focus {
     object-fit: contain;
   }
 }
-/* ...existing code... */
-
-
-
-
 
 
 
@@ -821,7 +780,6 @@ body:not(.user-is-tabbing) a:focus {
 
 /* Achievements */
 
-/* // ...existing code... */
 /* Achievements — layout and round icons (based on education styles) */
 .achievements__list {
   list-style: none;
@@ -926,7 +884,6 @@ body:not(.user-is-tabbing) a:focus {
     font-size: 1.5rem;
   }
 }
-/* // ...existing code... */
 
 
 
@@ -986,15 +943,6 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
-
-
-
-
-
-
-
-
-
 
 
 
